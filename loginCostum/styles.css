@@ -1,0 +1,172 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(image/first_encounter_by_petalpxl_dgdpwkq.gif); /* Set the image path */
+    background-size: cover; /* jadiin gambar menjadi satu */
+    background-position: center; /* Center the image */
+    background-color: #25252b;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    position: relative;
+    width: 750px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #0051ff;
+    box-shadow: 0 0 70px #0051ff;
+    overflow: hidden;
+}
+.nav .login{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.nav .login{
+    left: 0;
+    padding: 0 40px;
+}
+.nav h2{
+    font-size: 32px;
+    text-align: center;
+}
+.nav .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+    padding-right: 23px;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.input-box i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 18px;
+    transform: translate(-50%);
+    transition: .5s;
+}
+.input-box input:focus ~ i,
+.input-box input:valid ~ i{
+    top: -5px;
+    color: #f397b6;
+}
+.btn{
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #0051ff;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    height: 300%;
+    width: 100%;
+    background: linear-gradient(#0051ff, #25252b, #0051ff, #25252b);
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+}
+.btn:hover::before{
+    top: 0;
+}
+
+.register{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 10px
+}
+.register a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register a:hover{
+    text-decoration: underline;
+    color: #0051ff;
+}
+
+.judul{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.judul.Login{
+    right: 0;
+    text-align: right;
+    padding: 0 40px 60px 150px;
+}
+.judul h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 1.3;  
+    text-align: right;  
+}
+.judul p{
+    font-size: 16px;
+}
+
+.nav .shape{
+    position: absolute;
+    right: 0;
+    top: -5px;
+    height: 600px;
+    width: 850px;
+    background: linear-gradient(45deg, #25252b, #0051ff);
+    transform: rotate(10deg) skewY(38deg);
+    transform-origin: bottom right;
+}

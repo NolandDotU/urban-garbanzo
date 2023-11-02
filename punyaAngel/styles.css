@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(sky.gif);
+    background-position: center;
+    background-size: cover;
+}
+.form-login{
+    position: relative;
+    width: 400px;
+    height: 700px;
+    background: rgba(207, 69, 251, 0.3);
+    border: 2px solid white;
+    box-shadow: 0 0 50px #d95bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.nama{
+    font-size: 20px;
+    top: 10%;
+    left: 22%;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+.kolom{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.kolom label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.kolom input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 10px 5px;
+    color: #fff;
+}
+.kolom i{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    top: 20px;
+}
+.btn button{
+    width: 75%;
+    height: 50px;
+    background: transparent;
+    margin-left: 13%;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 12px;
+}

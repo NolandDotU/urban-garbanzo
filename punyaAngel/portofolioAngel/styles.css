@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-size: cover; /* jadiin gambar menjadi satu */
+    background-position: center; /* Center the image */
+    background-color: #25252b;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    right: 18%;
+    width: 200px;
+    height: 200px;
+    top: 1%;
+    border-radius: 70%;
+    background: linear-gradient(315deg, #cacaca, #f0f0f0);
+    overflow: hidden;
+}
+.shape img{
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    width: 80%;
+    height: auto;
+    padding: 40px;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content{
+    padding: 20px; 
+}
+.content h2{
+    text-align: left; 
+}
+hr{
+    width: 100%;
+
+}
+.field{
+    text-align: center;
+}
+
+.portofolio-item {
+    float: left;
+    width: 30%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.portofolio-item img {
+    width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.btn{
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #0051ff;
+    overflow: hidden;
+    z-index: 1;
+}
